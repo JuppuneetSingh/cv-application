@@ -1,0 +1,190 @@
+/* Main application */
+.app {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+.app > h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #172554;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Form sections */
+section {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+  font-size: 21px;
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Form fields */
+section div {
+  margin-bottom: 18px;
+}
+
+section label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+section input,
+section textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  color: #111827;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+section input:focus,
+section textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+section textarea {
+  min-height: 110px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* Buttons */
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Generate CV button */
+.app > button {
+  display: block;
+  margin: 30px auto;
+  padding: 14px 35px;
+  font-size: 16px;
+}
+
+/* CV Preview */
+.cv-preview {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 55px 60px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.cv-preview header {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #1e3a8a;
+}
+
+.cv-preview header h1 {
+  font-size: 34px;
+  color: #172554;
+  margin: 0 0 12px;
+}
+
+.cv-preview header p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.cv-preview section {
+  padding: 0;
+  margin-bottom: 30px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+.cv-preview section h2 {
+  color: #1e3a8a;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.cv-preview section h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.cv-preview section p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 5px 0;
+}
+
+/* Back button */
+.cv-preview > button {
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .app > h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .cv-preview {
+    padding: 30px 22px;
+  }
+
+  .cv-preview header h1 {
+    font-size: 27px;
+  }
+}
